@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-// BankAccount Class
 class BankAccount {
     private double balance;
 
@@ -36,7 +35,6 @@ class BankAccount {
     }
 }
 
-// ATM Class
 class ATM {
     private BankAccount account;
 
@@ -96,16 +94,12 @@ class ATM {
     }
 }
 
-// Main Class
 public class Main {
     public static void main(String[] args) {
-        // Initialize the bank account with an initial balance
-        BankAccount account = new BankAccount(500.00);  // Example: Starting with $500
+        BankAccount account = new BankAccount(500.00); 
 
-        // Create an ATM instance with the bank account
         ATM atm = new ATM(account);
 
-        // Start the ATM interface
         atm.start();
     }
 }
